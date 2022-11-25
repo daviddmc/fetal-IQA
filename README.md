@@ -1,5 +1,11 @@
 # fetal-IQA
-Image quality assessment for fetal MRI
+This repo is the implementation of an image quality assessment (IQA) method for fetal MRI, which is the accumulation of the following works:
+
+\[1\] A deep learning approach for image quality assessment of fetal brain MRI ([ISMRM](https://archive.ismrm.org/2019/0839.html))
+
+\[2\] Semi-supervised learning for fetal brain MRI quality assessment with ROI consistency ([MICCAI](https://link.springer.com/chapter/10.1007/978-3-030-59725-2_37) | [arXiv](https://arxiv.org/abs/2006.12704))
+
+\[3\] Automated detection and reacquisition of motion-degraded images in fetal HASTE imaging at 3 T ([MRM](https://onlinelibrary.wiley.com/doi/10.1002/mrm.29106))
 
 ## Cite our work
 ```
