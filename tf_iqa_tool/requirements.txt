@@ -1,0 +1,3 @@
+tensorflow-gpu=1.12.0
+pydicom=1.2.2
+numpy=1.16.2
