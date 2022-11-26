@@ -1,6 +1,10 @@
 *.h5
 *.hdf5
 *.dcm
+*.ckpt
+*.ckpt.meta
+*.obj
+src/results/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
