@@ -7,6 +7,54 @@ This repo is the implementation of an image quality assessment (IQA) method for 
 
 \[3\] A deep learning approach for image quality assessment of fetal brain MRI ([ISMRM](https://archive.ismrm.org/2019/0839.html))
 
+## Usage
+
+### Train your own models
+
+#### Brain segmentation (optional)
+
+To use ROI consistency, you would need to generate ROI for your dataset.
+
+1. Download the [pre-trained segmentation network](https://bitbucket.org/bchradiology/u-net/src/master/Model/)
+2. Modifty `PATH_LABELED_DATA` and `PATH_UNLABELED_DATA` in `brainSeg/Code/FetalUnet.py` to point to your own dataset.
+3. Run:
+    ```
+    cd brainSeg/Code
+    python FetalUnet.py
+    ```
+
+#### Implement your dataset
+
+Implement your dataset following `src/mean_teacher/haste.py`
+
+#### Training
+
+```
+cd src
+python experiments/haste_exp.py
+```
+
+### Pre-trained weights
+
+#### PyTorch
+
+1. Download [pre-trained models](https://zenodo.org/record/7368570) (`pytorch.ckpt`) to `torch_iqa_tool/pretrained_models`
+
+2. run demo
+    ```
+    cd torch_iqa_tool
+    python iqa_demo.py
+    ```
+
+#### Tensorflow
+
+1. Download [pre-trained models](https://zenodo.org/record/7368570) (`model_ismrm.hdf5` and `model_miccai.h5`) to `tf_iqa_tool/pretrained_models`
+
+2. run demo
+    ```
+    cd tf_iqa_tool
+    python iqa_demo.py
+    ```
 
 ## Cite our work
 ```
