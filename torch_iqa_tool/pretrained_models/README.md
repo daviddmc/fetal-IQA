@@ -1,0 +1,1 @@
+Download [pre-trained models](https://zenodo.org/record/7368570) (`pytorch.ckpt`) to here.
