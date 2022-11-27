@@ -34,7 +34,7 @@ cd src
 python experiments/haste_exp.py
 ```
 
-### Pre-trained weights
+### Use pre-trained model
 
 #### PyTorch
 
