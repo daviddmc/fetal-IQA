@@ -1,9 +1,9 @@
 
-# README
+# Usage
 
 1. See requirements.txt for environment setup.
 
-2. Download [pre-trained models](https://zenodo.org/record/7361788#.Y4DkknbMKUk) to `./pretrained_models`
+2. Download [pre-trained models](https://zenodo.org/record/7368570) (`model_ismrm.hdf5` and `model_miccai.h5`) to `./pretrained_models`
 
 3. DEMO: run `python iqa_demo.py`.
 
