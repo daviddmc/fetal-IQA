@@ -13,13 +13,13 @@ if __name__ == '__main__':
     img_std = 321.499 
     
     # read data for demo
-    # img_good = pydicom.dcmread('./examples/good.dcm').pixel_array.astype(np.float32)
-    # img_bad = pydicom.dcmread('./examples/bad.dcm').pixel_array.astype(np.float32)
-    # np.save('./examples/good.npy', img_good)
-    # np.save('./examples/bad.npy', img_bad)
+    # img_good = pydicom.dcmread('../examples/good.dcm').pixel_array.astype(np.float32)
+    # img_bad = pydicom.dcmread('../examples/bad.dcm').pixel_array.astype(np.float32)
+    # np.save('../examples/good.npy', img_good)
+    # np.save('../examples/bad.npy', img_bad)
 
-    img_good = np.load('./examples/good.npy')
-    img_bad = np.load('./examples/bad.npy')
+    img_good = np.load('../examples/good.npy')
+    img_bad = np.load('../examples/bad.npy')
 
     img = np.stack((img_good, img_bad),axis=0)
     
