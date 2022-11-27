@@ -23,18 +23,10 @@ import main
 import test
 from mean_teacher.cli import parse_dict_args
 from mean_teacher.run_context import RunContext
-import pandas as pd
 import os
 import itertools
 
 LOG = logging.getLogger('runner')
-
-param_search = False
-
-if param_search and os.path.exists('param_search.csv'):
-    search_log = pd.read_csv('param_search.csv', index_col=0).to_dict(orient='index')
-else:
-    search_log = {}
 
 # python -m experiments.haste_exp
 
